@@ -1,6 +1,6 @@
-FROM debian:wheezy-20190228-slim
+FROM debian:wheezy
 RUN mkdir -p /usr/share/man/man1 && \
-    echo "deb http://archive.debian.org/debian wheezy main contrib non-free" > /etc/apt/sources.list && \
+    echo "deb http://oldarchive.debian.org/debian wheezy main contrib non-free" > /etc/apt/sources.list && \
     apt-get update && \
     apt-get -yu dist-upgrade && \
     apt-get -y --force-yes install tzdata=2016d-0+deb7u1 && \
